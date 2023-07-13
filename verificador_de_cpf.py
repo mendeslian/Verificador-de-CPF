@@ -17,7 +17,6 @@ while continuar == 1:
         print('O CPF digitado é inválido.')
 
     else:
-
             # Verificando o primeiro digito final:
             i = 0
             cpf_remodelado = ''
@@ -46,7 +45,7 @@ while continuar == 1:
                 verificador_1 = False
 
             # Verificando o segundo digito final:
-
+        
             i = 0
             cpf_remodelado = ''
             while(i < 9):
@@ -70,15 +69,13 @@ while continuar == 1:
             else: 
                 resultado_2 = mult_div_soma_digitos_cpf_2
 
-            # Verificando se os digitos finais estão certos:
-
             if int(cpf_sem_ponto_str[10]) == resultado_2:
                 verificador_2 = True
             else: 
                 verificador_2 = False
 
-            # Imprimindo o resultado
-
+            # Verificando se os digitos finais estão certos e imprimindo o resultado:
+        
             if verificador_1 and verificador_2:
                 print('O CPF digitado é válido.')
             else:
